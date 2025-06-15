@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COAST 2 COAST ENGINEERING | Precision Engineering & Fabrication</title>
+    <link rel="icon" type="image/jpeg" href="https://i.imgur.com/4vtzaE3.jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -175,7 +176,11 @@
                     <p>End-to-end solutions for industrial piping, including fabrication, installation, repair, and Non-Destructive Testing (NDT).</p>
                 </div>
                 <div class="p-6 service-card reveal" style="transition-delay: 400ms;">
-                    <div class="text-4xl accent-color mb-4"><i class="fas fa-crane"></i></div>
+                    <div class="text-4xl accent-color mb-4 h-10 w-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+                          <path d="M512 400V256c0-17.7-14.3-32-32-32s-32 14.3-32 32V352H320V128h48c17.7 0 32-14.3 32-32s-14.3-32-32-32H288V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H144c-17.7 0-32 14.3-32 32s14.3 32 32 32h48V352H64V256c0-17.7-14.3-32-32-32S0 238.3 0 256V400H64v64c0 17.7 14.3 32 32 32H416c17.7 0 32-14.3 32-32V400h64zM192 128H320V352H192V128z"/>
+                        </svg>
+                    </div>
                     <h3 class="text-xl font-bold mb-2">Heavy Lifting & Rigging</h3>
                     <p>Managing heavy lifting operations, meticulous lift planning, industrial demolition, and complex site logistics.</p>
                 </div>
@@ -309,15 +314,23 @@
                 <!-- Contact Form -->
                 <div>
                      <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
-                     <form action="#" method="POST">
+                     <!-- This form uses FormSubmit.co to send emails. -->
+                     <!-- IMPORTANT: The first time you submit the form, you will receive a confirmation email. -->
+                     <!-- You MUST click the activation link in that email to start receiving inquiries. -->
+                     <form action="https://formsubmit.co/coast2coasteng@gmail.com" method="POST">
+                         <!-- Subject for the email you receive -->
+                         <input type="hidden" name="_subject" value="New Inquiry from Coast 2 Coast Engineering Website">
+                         <!-- Disable reCAPTCHA (optional) -->
+                         <input type="hidden" name="_captcha" value="false">
+
                          <div class="mb-4">
-                             <input type="text" name="name" placeholder="Your Name" class="w-full p-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                             <input type="text" name="name" placeholder="Your Name" class="w-full p-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                          </div>
                          <div class="mb-4">
-                             <input type="email" name="email" placeholder="Your Email" class="w-full p-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                             <input type="email" name="email" placeholder="Your Email" class="w-full p-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                          </div>
                          <div class="mb-4">
-                             <textarea name="message" placeholder="Your Message" rows="5" class="w-full p-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                             <textarea name="message" placeholder="Your Message" rows="5" class="w-full p-3 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
                          </div>
                          <button type="submit" class="w-full bg-accent text-white font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition-all duration-300">
                              Submit Inquiry
